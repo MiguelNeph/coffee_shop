@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,400;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="header">
+        <div class="container">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-center" id="menu-navigation">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold me-5">
+                        <a href="#home" class="nav-link">HOME<br><i class="bi bi-house-door ms-3"></i></a>
+                    </li>
+                    <li class="nav-item fw-bold me-5">
+                        <a href="#products" class="nav-link">PRODUCTS<br><i class="bi bi-shop-window ms-4"></i></a>
+                    </li>
+                    <li class="nav-item fw-bold me-5">
+                        <a href="#project" class="nav-link"></i>OUR PROJECT<br><i class="bi bi-cup-hot ms-5"></i></a>
+                    </li>
+                    <li class="nav-item fw-bold me-5">
+                        <a href="#contact" class="nav-link">CONTACT<br><i class="bi bi-chat-dots ms-4"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="header" data-bs-smooth-scroll="true">
+        <section id="home">
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./media/cafe-main.jpg" alt="organic coffee">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./media/coffee_fields.jpg" alt="cofee fields">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./media/cafe_tostado.jpg" alt="coffee recollecting">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./media/cafeteria.jpg" alt="cafeteria">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2 class="section-title">THE BEST <br><span class="text-colored">COFFEE</span><br> IN TOWN</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus, praesentium! Voluptates in exercitationem amet magnam sit! Distinctio provident veniam eaque quisquam sed consectetur cupiditate tenetur earum magni autem? Rerum, ipsum.</p>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./media/lower_header.jpg" class="d-block w-100 rounded" alt="cafe">
+                        </div>
+                        <div class="col-md-4">
+                            <h2 class="section-title"><span class="text-colored">Organic</span><br> manufacture</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam blanditiis repellat doloremque explicabo eos, exercitationem libero culpa tempore, molestiae aspernatur fugit odio nam dolores dignissimos in earum nesciunt, et voluptates.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row" id="line">
+                    <h2 class="section-title text-center mb-3 mt-3">
+                        KNOW OUR PRODUCTS
+                    </h2>
+                </div>
+                <div class="row mt-2">
+                    <aside class="d-md-flex justify-content-center">
+                        <nav class="nav nav-pills">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#beans" class=" text-start nav-link  active mt-2">Beans</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#ground-coffee" class=" text-start nav-link ms-5 me-5 mt-2">Ground coffee</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class=" text-start nav-link  mt-2">Caffein-free</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="beans">
+                                <div class="row mt-4">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="./media/cofee beans/light.jpg">
+                                        <h5 class="text-colored fw-bold mt-2  text-center">Light Flavour</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="./media/cofee beans/toasted.jpg">
+                                        <h5 class="text-colored fw-bold mt-2  text-center">Toasted Bean</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="./media/cofee beans/exotic.jpg">
+                                        <h5 class="text-colored fw-bold mt-2  text-center">Exotic Beans</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="ground-coffee">
+                                <div class="row mt-4">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="./media/cofee beans/ground.jpg">
+                                        <h5 class="text-colored fw-bold mt-2 text-center rounded">Soft</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="./media/cofee beans/ground.jpg">
+                                        <h5 class="text-colored fw-bold mt-2 text-center rounded">Medium-soft</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="./media/cofee beans/ground.jpg">
+                                        <h5 class="text-colored fw-bold mt-2 text-center rounded">Strong</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="./media/cofee beans/ground.jpg">
+                                        <h5 class="text-colored fw-bold mt-2 text-center rounded">Super strong</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="entradas">
+                                <div class="row mt-4">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100 rounded" src="./media/cofee beans/ground.jpg">
+                                        <h5 class="text-colored fw-bold mt-2 text-center rounded">Caffein-free</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="project" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row" id="line">
+                    <h2 class="section-title text-center mb-3 mt-3">
+                        OUR WORK AND PROJECT
+                    </h2>
+                </div>
+                <div class="row mt-4" id="cards">
+                    <div class="col-sm-12  col-md-6 col-lg-4">
+                        <div class="card text-bg-dark">
+                            <img src="./media/cards/peasant.jpg"/>
+                            <div class="card-img-overlay">
+                                <a hred="0" class="btn btn-primary nav-link">DONATE</a>
+                            </div>
+                            <h5 class="card-title text-center">OUR FILANTROPIC PROJECT IN LOCAL COMMUNITIES</h5>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  col-md-6 col-lg-4">
+                        <div class="card text-bg-dark">
+                            <img src="./media/cards/eco.jpg"/>
+                            <div class="card-img-overlay">
+                                <a hred="0" class="btn btn-primary nav-link">BE AN ECO FRIEND</a>
+                            </div>
+                            <h4 class="card-title text-center">ECO FRIENDS</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-12  col-md-6 col-lg-4">
+                        <div class="card text-bg-dark">
+                            <img src="./media/cards/baristas.jpg"/>
+                            <div class="card-img-overlay">
+                                <a hred="0" class="btn btn-primary nav-link">BE PART OF US</a>
+                            </div>
+                            <h4 class="card-title text-center">MEET OUR TEAM</h4>
+                        </div>
+                    </div>
+                    </div>   
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <div class="row" id="line">
+                    <h2 class="section-title text-center mb-3 mt-3">
+                        CONTACT US
+                    </h2>
+                </div>
+            <div class="row contact-methods mt-4">
+                <div  id="form" class="col-4 col-sm-6">
+                    <form">
+                        <input type="text" placeholder="Your name" required/>
+                        <input type="email" placeholder="Your e-mail" required/>
+                        <input type="tel" placeholder="Your telefone (opcional)"/>
+                        <textarea placeholder="Your message" required></textarea>
+                        <button type="submit" class="text-start nav-link text-center">Submit</button>
+                    </form>
+                </div>
+                <div id="social" class="col-4 col-sm-6">
+                    <h3>Follow us for more</h3>
+                    <ul class="social-links">
+                        <li>
+                            <a href="a" title="Follow us on Instagram">
+                                <i class="bi bi-instagram  fs-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a" title="Follow us on Facebook">
+                                <i class="bi bi-facebook ms-3 me-3 fs-1"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="a" title="Follow us on YouTube">
+                                <i class="bi bi-youtube fs-1"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="adress" class="col-4 col-sm-6">
+                    <h3>We will be waiting for you!</h3>
+                    <p>
+                        Rua Aleatoria 123 - Lisboa
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>l
